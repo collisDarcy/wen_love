@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 600px;
+}
+
+audio {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+div.btnbg {
+    position: absolute;
+    top: 28%;
+    left: 36%;
+    width: 50px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    animation: move 1s infinite alternate;
+    opacity: .7;
+}
+
+.btnbg::before,
+.btnbg::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 125px;
+    height: 200px;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0 0 52px red;
+}
+
+.btnbg::after {
+    content: '';
+    left: 125px;
+    top: 0;
+}
+
+.btnbg::before,
+.btnbg::after {
+    position: absolute;
+    left: 125px;
+    top: 0;
+    content: '';
+    width: 125px;
+    height: 200px;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    box-shadow: 0 0 52px red;
+    background-image: url('../images/5_bg.jpg');
+    background-size: 100% 100%;
+
+}
+
+.btnbg::before {
+    background-image: url('../images/love.gif');
+    background-size: 90% 90%;
+    background-position: 7px 130px;
+
+}
+
+.btnbg::after {
+    content: '';
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* 跳动的动画 */
+@keyframes move {
+    100% {
+        transform: scale(1.92);
+        /*变大1.2倍*/
+    }
+}

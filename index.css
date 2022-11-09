@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(17, 10, 37);
+  background-image: url('./images/1_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 52% 60%;
+  background-position: 50% 104%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+audio {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+img {
+  position: absolute;
+  top: 2px;
+  left: 306px;
+  width: 71px;
+  height: 71px;
+  z-index: 1;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* 下方的样式 */
+.waves {
+  position: absolute;
+  left: 0;
+  top: -107px;
+  right: 0;
+  bottom: 0;
+}
